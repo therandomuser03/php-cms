@@ -8,6 +8,9 @@ echo '<li><a href="index.php?pagecode='.$i.'">'.$i.'</a></li>';
 
 
 
+# Project Directory Structure
+
+```bash
 cms_2/                                          # Root directory
 │
 ├── backend/                                    # Backend functionalities
@@ -16,42 +19,42 @@ cms_2/                                          # Root directory
 │   │   ├── login.php                           # Admin login
 │   │   ├── logout.php                          # Logout functionality
 │   │   └── register.php                        # Admin registration
-│   |
-|   ├── gallery/                                # Gallery management system
-│   |   ├── uploads/
-|   |   |   └──images/                          # Image uploads directory
-│   │   |      └── (image files)    [e.g., page-title.jpg]
-│   |   ├── add_image.php                       # Add new image form
-│   |   ├── edit_image.php                      # Edit existing images
-│   |   ├── list_image.php                      # List existing images
-│   |   ├── upload_image.php                    # Handle image uploads
-│   |   └── view_image.php                      # View image functionality
-│   |
-|   ├── includes/                               # Commonly used includes
-│   |   ├── assets/
-│   |   │   ├── css/                            # CSS files
-│   |   │   ├── fonts/                          # Font files
-│   |   │   ├── images/                         # Images for the UI
-│   |   |   └── js/                             # JavaScript files
-│   |   ├── footer.php                          # Footer for the pages
-│   |   ├── header.php                          # Header for the pages
-│   |   ├── pagefooter.php                      # Footer for specific pages
-│   |   ├── pageheader.php                      # Header for specific pages
-│   |   └── sidebar.php                         # Sidebar for the pages
-│   |
-|   ├── pages/                                  # Pages management system
-│   |   ├── pages_add.php                       # Add new page form
-│   |   ├── pages_edit.php                      # Edit existing pages
-│   |   └── pages.php                           # List and manage pages
-│   |
-|   ├── public/                                 # Public-facing content
-│   |   └── index.php                           # Homepage of the public website
-│   |
-|   └── users/                                  # User management system
-|   |   |── manage_users.php                    # List and manage users
-|   |   |── users_add.php                       # Add new user form
-|   |   └── users_edit.php                      # Edit existing users
-|   |
+│   │
+│   ├── gallery/                                # Gallery management system
+│   │   ├── uploads/
+│   │   │   └── images/                         # Image uploads directory
+│   │   │       └── (image files)               # [e.g., page-title.jpg]
+│   │   ├── add_image.php                       # Add new image form
+│   │   ├── edit_image.php                      # Edit existing images
+│   │   ├── list_image.php                      # List existing images
+│   │   ├── upload_image.php                    # Handle image uploads
+│   │   └── view_image.php                      # View image functionality
+│   │
+│   ├── includes/                               # Commonly used includes
+│   │   ├── assets/
+│   │   │   ├── css/                            # CSS files
+│   │   │   ├── fonts/                          # Font files
+│   │   │   ├── images/                         # Images for the UI
+│   │   │   └── js/                             # JavaScript files
+│   │   ├── footer.php                          # Footer for the pages
+│   │   ├── header.php                          # Header for the pages
+│   │   ├── pagefooter.php                      # Footer for specific pages
+│   │   ├── pageheader.php                      # Header for specific pages
+│   │   └── sidebar.php                         # Sidebar for the pages
+│   │
+│   ├── pages/                                  # Pages management system
+│   │   ├── pages_add.php                       # Add new page form
+│   │   ├── pages_edit.php                      # Edit existing pages
+│   │   └── pages.php                           # List and manage pages
+│   │
+│   ├── public/                                 # Public-facing content
+│   │   └── index.php                           # Homepage of the public website
+│   │
+│   └── users/                                  # User management system
+│       ├── manage_users.php                    # List and manage users
+│       ├── users_add.php                       # Add new user form
+│       └── users_edit.php                      # Edit existing users
+│
 ├── config/                                     # Configuration files
 │   ├── 404.html                                # 404 error page
 │   ├── cms_2.sql                               # SQL file for database structure
@@ -68,6 +71,7 @@ cms_2/                                          # Root directory
 └── README.md                                   # Project overview (this file)
 
 
+```
 
 <!-- 
 
