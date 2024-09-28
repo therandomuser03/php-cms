@@ -196,10 +196,10 @@ if ($post_id) {
                         <div class="contact">
                             <div class="call">
                                 <i class="fi flaticon-call"></i>
-                                <p>Call us anytime</p>
-                                <h5>+65487441584</h5>
+                                <p>Call us at</p>
+                                <h5>+91/0 33 7198 1000</h5>
                             </div>
-                            <a href="#" class="theme-btn">Contact us</a>
+                            <a href="index.php?sl_no=5;" class="theme-btn">Contact us</a>
                         </div>
                     </div>
                 </div><!-- end of container -->

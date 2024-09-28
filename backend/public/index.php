@@ -43,7 +43,7 @@ if (isset($_POST['email'])){
     <div class="row justify-content-center">
         <div class="col-md-16">
             <h1 style="text-align: center">Admin Login</h1><br><br>
-            <h4>Login to use this PHP site integrated with TinyMCE Editor. Create and Edit your content freely and let other users see your creation!</h4>
+            <h4 style="text-align: center">Login to your account. Integrated with TinyMCE</h4>
         </div>
     </div>
     <br><br>

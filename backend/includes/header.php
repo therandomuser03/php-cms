@@ -15,8 +15,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
     />
     <!-- MDB -->
-    <link rel="stylesheet" href="assets/css/mdb.min.css" />
-    <link rel="stylesheet" href="assets/css/easy_toast.css" />
+    <link rel="stylesheet" href="../includes/assets/css/mdb.min.css" />
+    <link rel="stylesheet" href="../includes/assets/css/easy_toast.css" />
 </head>
 <body>
     

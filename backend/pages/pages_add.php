@@ -45,11 +45,11 @@ if (isset($_POST['title'])) {
 }
 ?>
 
-<div class="container mt-5">
+<div style="padding: 0 4vw;">
     <div class="row justify-content-center">
         <div class="col-md-12">
             
-            <h1 class="display-1">Add Post</h1>
+            <h1 class="display-4">Add Page</h1>
             
             <form method="post" enctype="multipart/form-data">
                 <!-- Title input -->
@@ -60,7 +60,7 @@ if (isset($_POST['title'])) {
                 
                 <!-- Content input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <textarea name="content" id="content"></textarea>
+                    <textarea name="content" id="content" style="min-height: 50vh;"></textarea>
                 </div>
                 
                 <!-- Search Tag input -->
@@ -72,11 +72,11 @@ if (isset($_POST['title'])) {
                 <!-- Image upload -->
                 <div class="form-outline mb-4">
                     <label class="form-label" for="imageUpload">Upload Image:</label>
-                    <input type="file" id="image" name="image" accept="image/*" class="form-control" />
+                    <input type="file" id="image" name="image" accept="image/*" class="form-control" style="border: 1px solid black;"/>
                 </div>
 
                 <!-- Submit button -->
-                <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block">Add post</button>
+                <button data-mdb-ripple-init type="submit" class="btn btn-primary">Add post</button>
             </form>
         </div>
     </div>

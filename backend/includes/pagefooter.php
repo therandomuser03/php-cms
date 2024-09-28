@@ -13,12 +13,12 @@
                             <div>
                                 <i class="fi flaticon-call"></i>
                                 <h4>Call us</h4>
-                                <p>+654894754</p>
-                            </div>
+                                <p>+91/0 33 7198 1000</p>
+                            </div><br>
                             <div>
                                 <i class="fi flaticon-contact"></i>
                                 <h4>Email us</h4>
-                                <p>demo@example.com</p>
+                                <p>rawmet@rawmet.co.in</p>
                             </div>
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                         <div class="col col-lg-3 col-md-3 col-sm-6">
                             <div class="widget about-widget">
                                 <div class="logo widget-title">
-                                    <img src="assets/images/footer-logo.png" alt>
+                                    <img src="../backend/includes/assets/images/logo.png" alt>
                                 </div>
                                 <p>Mikago arm towards the viewer gregor then turned to look out the window at the dull weather</p>
                                 <div class="social-icons">
@@ -61,7 +61,7 @@
                                     <li><a href="#">Meet team</a></li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">Provacu Policy</a></li>
+                                    <li><a href="../config/404.html">Privacy Policy</a></li>
                                     <li><a href="#">Testimonials</a></li>
                                     <li><a href="#">News</a></li>
                                     <li><a href="#">FAQ</a></li>
@@ -74,10 +74,10 @@
                                     <h3>Our Address</h3>
                                 </div>
                                 <ul>
-                                    <li>25/19 Duel aveniew, new Booston town, Ghana</li>
-                                    <li><span>Phone:</span> 84667441</li>
-                                    <li><span>Email:</span> demo@example.com</li>
-                                    <li><span>Office Time:</span> 10AM- 5PM</li>
+                                    <li>3rd Floor, Terramin, 52 Syed Amir Ali Avenue, Kolkata - 700019, West Bengal, India.</li>
+                                    <li><span>Phone:</span> +91/0 33 7198 1000</li>
+                                    <li><span>Email:</span> rawmet@rawmet.co.in</li>
+                                    <li><span>Office Time:</span> 10am- 5pm</li>
                                 </ul>
                             </div>
                         </div>
