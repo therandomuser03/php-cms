@@ -4,7 +4,7 @@ function secure(){
     if(!isset($_SESSION['name'])){
         // echo 'Please login first to view this page';
         set_message("Please login first to view this page");
-        header('Location: ../backend/public/index.php');
+        header('Location: ../public/index.php');
         die();
     }
 }

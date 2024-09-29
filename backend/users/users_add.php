@@ -1,20 +1,20 @@
 <?php
 
-include('../includes/config.php');
-include('../includes/database.php');
-include('../includes/functions.php');
+include('../../config/config.php');
+include('../../config/database.php');
+include('../../config/functions.php');
 secure();
 
 include('../includes/header.php');
 
 if (isset($_POST['username'])){
 
-    if ($stm = $connect->prepare('INSERT INTO users (username, email, password, active) VALUES (?, ?, ?, ?)')){
+    if ($stm = $connect->prepare('INSERT INTO login (name, email, password, access) VALUES (?, ?, ?, ?)')){
         $hashed = SHA1($_POST['password']);
-        $stm->bind_param('ssss', $_POST['username'], $_POST['email'], $hashed, $_POST['active']);
+        $stm->bind_param('ssss', $_POST['name'], $_POST['email'], $hashed, $_POST['access']);
         $stm->execute();
 
-        set_message("A new user " . $_POST['username'] . " has been added");
+        set_message("A new user " . $_POST['name'] . " has been added");
         header('Location: users.php');
         $stm->close();
         die();
@@ -34,8 +34,8 @@ if (isset($_POST['username'])){
             <form method="post">
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="text" id="username" name="username" class="form-control" />
-                    <label class="form-label" for="username">Username</label>
+                    <input type="text" id="name" name="name" class="form-control" />
+                    <label class="form-label" for="name">Username</label>
                 </div>
                 
                 <div data-mdb-input-init class="form-outline mb-4">
@@ -51,9 +51,10 @@ if (isset($_POST['username'])){
                 
                 <!-- Active select -->
                 <div class="form-outline mb-4">
-                    <select name="active" class="form-select" id="active">
-                        <option value="1">Active</option>
-                        <option value="0">Inactive</option>    
+                    <label for="access">Access</label>
+                    <select name="active" class="form-select" id="access">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>    
                     </select>
                 </div>
                 

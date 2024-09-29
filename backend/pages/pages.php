@@ -78,7 +78,7 @@ if ($stm = $connect->prepare('SELECT * FROM content')) {
                     <td><?php echo ucfirst($record['display']); ?></td>
                     <td>
                         <a href="pages_edit.php?sl_no=<?php echo $record['sl_no']; ?>">Edit</a> |
-                        <!-- <a href="pages_manage.php?delete=<?php echo $record['sl_no']; ?>" onclick="return confirm('Are you sure you want to delete this post?')">Delete</a> -->
+                        <a href="pages_delete.php?delete=<?php echo $record['sl_no']; ?>" onclick="return confirm('Are you sure you want to delete this post?')">Delete</a>
                     </td>
                 </tr>
                 <?php } ?>

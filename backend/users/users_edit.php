@@ -1,22 +1,22 @@
 <?php
 
-include('../includes/config.php');
-include('../includes/database.php');
-include('../includes/functions.php');
+include('../../config/config.php');
+include('../../config/database.php');
+include('../../config/functions.php');
 secure();
 
 include('../includes/header.php');
 
 if (isset($_POST['username'])){
     
-    if ($stm = $connect->prepare('UPDATE users set username = ? , email = ? , active = ? WHERE id = ?')){
-        $stm->bind_param('sssi', $_POST['username'], $_POST['email'], $_POST['active'], $_GET['id']);
+    if ($stm = $connect->prepare('UPDATE login set name = ? , email = ? , access = ? WHERE sl_no = ?')){
+        $stm->bind_param('sssi', $_POST['name'], $_POST['email'], $_POST['access'], $_GET['sl_no']);
         $stm->execute();
         
         $stm->close();
 
         if (!empty($_POST['password'])){
-            if ($stm = $connect->prepare('UPDATE users set password = ? WHERE id = ?')){
+            if ($stm = $connect->prepare('UPDATE login set password = ? WHERE sl_no = ?')){
                 $hashed = SHA1($_POST['password']);
                 $stm->bind_param('si', $hashed, $_GET['id']);
                 $stm->execute();
@@ -28,7 +28,7 @@ if (isset($_POST['username'])){
         }
     }
     
-    set_message("User " . $_GET['id'] . " has been updated");
+    set_message("User " . $_GET['sl_no'] . " has been updated");
     header('Location: users.php');
     die();
 
@@ -37,7 +37,7 @@ if (isset($_POST['username'])){
 }
 
 if (isset($_GET['id'])){
-    if($stm = $connect->prepare('SELECT * from users WHERE id = ?')){
+    if($stm = $connect->prepare('SELECT * from login WHERE sl_no = ?')){
         $stm->bind_param('i', $_GET['id']);
         $stm->execute();
 
@@ -48,7 +48,6 @@ if (isset($_GET['id'])){
         
 ?>
 <div class="container mt-5">
-    </div>
     
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -58,8 +57,8 @@ if (isset($_GET['id'])){
             <form method="post">
                 <!-- Email input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <input type="text" id="username" name="username" class="form-control active" value="<?php echo $user['username'] ?>"/>
-                    <label class="form-label" for="username">Username</label>
+                    <input type="text" id="name" name="name" class="form-control active" value="<?php echo $user['name'] ?>"/>
+                    <label class="form-label" for="name">Username</label>
                 </div>
                 
                 <div data-mdb-input-init class="form-outline mb-4">
@@ -75,9 +74,10 @@ if (isset($_GET['id'])){
                 
                 <!-- Active select -->
                 <div class="form-outline mb-4">
-                    <select name="active" class="form-select" id="active">
-                        <option <?php echo ($user['active']) ? "selected" : ""; ?> value="1">Active</option>
-                        <option <?php echo ($user['active']) ? "" : "selected"; ?> value="0">Inactive</option>    
+                    <label for="access">Access</label>
+                    <select name="access" class="form-select" id="access">
+                        <option <?php echo ($user['access']) ? "selected" : ""; ?> value="1">Yes</option>
+                        <option <?php echo ($user['access']) ? "" : "selected"; ?> value="0">No</option>    
                     </select>
                 </div>
                 

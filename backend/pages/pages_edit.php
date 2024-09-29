@@ -34,15 +34,13 @@ if (isset($_GET['sl_no'])){
         if ($post){
         
 ?>
-<div class="container mt-5">
-    </div>
-    
+<div style="padding: 0 4vw;">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             
-            <h1 class="display-1">Edit Post</h1>
+            <h1 class="display-4">Edit Post</h1>
             
-            <form method="post">
+            <form method="post" enctype="multipart/form-data">
                 <!-- Title input -->
                 <div data-mdb-input-init class="form-outline mb-4">
                     <input type="text" id="title" name="title" class="form-control" value="<?php echo $post['title'] ?>"/>
@@ -51,7 +49,7 @@ if (isset($_GET['sl_no'])){
                 
                 <!-- Content input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <textarea name="contents" id="content"><?php echo $post['contents'] ?></textarea>
+                    <textarea name="contents" id="content" style="min-height: 50vh;"><?php echo $post['contents'] ?></textarea>
                 </div>
                 
                 <!-- Submit button -->

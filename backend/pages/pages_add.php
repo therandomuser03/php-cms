@@ -76,7 +76,7 @@ if (isset($_POST['title'])) {
                 </div>
 
                 <!-- Submit button -->
-                <button data-mdb-ripple-init type="submit" class="btn btn-primary">Add post</button>
+                <button data-mdb-ripple-init type="submit" class="btn btn-primary">Add Page</button>
             </form>
         </div>
     </div>
