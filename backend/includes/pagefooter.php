@@ -5,21 +5,21 @@
                     <div class="col col-lg-6 col-md-6">
                         <div class="cta-text">
                             <h3>Lets Get in Touch!</h3>
-                            <p>Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>
-                        </div>
+                            <p>For any inquiries about our energy solutions or to discuss potential collaborations, feel free to reach out to us. Our team is always here to assist you with any queries.</p>
+                            </div>
                     </div>
                     <div class="col col-lg-5 col-lg-offset-1 col-md-6">
                         <div class="contact-info">
                             <div>
                                 <i class="fi flaticon-call"></i>
                                 <h4>Call us</h4>
-                                <p>+91/0 33 7198 1000</p>
+                                <p>+91 / 033 7198 1000</p>
                             </div><br>
                             <div>
                                 <i class="fi flaticon-contact"></i>
                                 <h4>Email us</h4>
-                                <p>rawmet@rawmet.co.in</p>
-                            </div>
+                                <p>info@atcel.co.in</p>
+                                </div>
                         </div>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                                 <div class="logo widget-title">
                                     <img src="../backend/includes/assets/images/logo.png" alt>
                                 </div>
-                                <p>Mikago arm towards the viewer gregor then turned to look out the window at the dull weather</p>
+                                <p>ATCEL is a leader in coke and energy solutions, offering high-quality services with a commitment to sustainability and excellence.</p>
                                 <div class="social-icons">
                                     <ul>
                                         <li><a href="#"><i class="ti-facebook"></i></a></li>
@@ -55,16 +55,16 @@
                                     <h3>Useful Links</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our services</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Meet team</a></li>
+                                    <li><a href="index.php?sl_no=2">About us</a></li>
+                                    <li><a href="index.php?sl_no=3">Our services</a></li>
+                                    <li><a href="index.php?sl_no=5">Contact us</a></li>
+                                    <li><a href="../config/404.html">Meet team</a></li>
                                 </ul>
                                 <ul>
                                     <li><a href="../config/404.html">Privacy Policy</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="../config/404.html">Testimonials</a></li>
+                                    <li><a href="../config/404.html">News</a></li>
+                                    <li><a href="../config/404.html">FAQ</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                 <div class="widget-title">
                                     <h3>Newsletter</h3>
                                 </div>
-                                <p>You will be notified when somthing new will be appear.</p>
+                                <p>Stay updated with the latest news and updates from ATCEL. Subscribe to our newsletter today!</p>
                                 <form>
                                     <div class="input-1">
                                         <input type="email" class="form-control" placeholder="Email Address *" required>
