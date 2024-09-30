@@ -49,7 +49,7 @@ if (isset($_GET['sl_no'])){
                 
                 <!-- Content input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <textarea name="contents" id="content" style="height: 500px;"><?php echo $post['contents'] ?></textarea>
+                    <textarea name="contents" id="content" style="height: 500px; width: 100%"><?php echo $post['contents'] ?></textarea>
                 </div>
                 
                 <!-- Submit button -->
@@ -61,7 +61,7 @@ if (isset($_GET['sl_no'])){
     </div>
 </div>
 
-<script src="../assets/js/tinymce/tinymce.min.js"></script>
+<script src="../includes/assets/js/tinymce/tinymce.min.js"></script>
 <script>
 tinymce.init({
     selector: '#content',

@@ -41,7 +41,10 @@ $stm->close();
     echo 'Could not prepare statement!';
 }
 } else {
-    echo "No post selected.";
+    echo '<script>
+        alert("No post selected. Redirecting to the main page.");
+        window.location.href = "index.php?sl_no=1";
+    </script>';
 }
 
 include '../backend/includes/pagefooter.php';

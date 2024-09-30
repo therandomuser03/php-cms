@@ -39,7 +39,7 @@ if ($stm = $connect->prepare('SELECT * FROM login')) {
             <h1 class="display-1">Users Management</h1>
             <a href="users_add.php" class="btn btn-secondary">Add new user</a><br><br>
             <table class="table table-striped table-hover">
-                <tr>
+                <tr style="text-align: center;">
                     <th>Sl. No.</th>
                     <th>Name</th>
                     <th>Email</th>
@@ -49,7 +49,7 @@ if ($stm = $connect->prepare('SELECT * FROM login')) {
                 </tr>
 
                 <?php while ($record = $result->fetch_assoc()) { ?>
-                <tr>
+                <tr style="text-align: center;">
                     <td><?php echo $record['sl_no']; ?></td>
                     <td><?php echo $record['name']; ?></td>
                     <td><?php echo $record['email']; ?></td>

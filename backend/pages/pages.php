@@ -50,18 +50,18 @@ if ($stm = $connect->prepare('SELECT * FROM content')) {
             <h1 class="display-1">Pages Management</h1>
             <a href="pages_add.php" class="btn btn-secondary" data-mdb-ripple-init>Add New Pages</a><br><br>
             <table class="table table-striped table-hover">
-                <tr>
+                <tr style="text-align: center;">
                     <th>Sl. No.</th>
                     <th>Title</th>
                     <th>Header Image</th>
-                    <th>Content</th>
-                    <th>Search Tags</th>
+                    <!-- <th>Content</th> -->
+                    <!-- <th>Search Tags</th> -->
                     <th>Display Status</th>
                     <th>Actions</th>
                 </tr>
 
                 <?php while ($record = $result->fetch_assoc()) { ?>
-                <tr>
+                <tr style="text-align: center;">
                     <td><?php echo $record['sl_no']; ?></td>
                     <td><a href="../../frontend/index.php?sl_no=<?php echo $record['sl_no']; ?>"><?php echo $record['title']; ?></a></td>
                     <td>
@@ -73,8 +73,8 @@ if ($stm = $connect->prepare('SELECT * FROM content')) {
                         }
                         ?>
                     </td>
-                    <td><?php echo substr($record['contents'], 0, 100) . '...'; ?></td>
-                    <td><?php echo $record['search_tag']; ?></td>
+
+
                     <td><?php echo ucfirst($record['display']); ?></td>
                     <td>
                         <a href="pages_edit.php?sl_no=<?php echo $record['sl_no']; ?>">Edit</a> |

@@ -76,7 +76,7 @@
                                 <ul>
                                     <li>3rd Floor, Terramin, 52 Syed Amir Ali Avenue, Kolkata - 700019, West Bengal, India.</li>
                                     <li><span>Phone:</span> +91/0 33 7198 1000</li>
-                                    <li><span>Email:</span> rawmet@rawmet.co.in</li>
+                                    <li><span>Email:</span> info@atcel.co.in</li>
                                     <li><span>Office Time:</span> 10am- 5pm</li>
                                 </ul>
                             </div>

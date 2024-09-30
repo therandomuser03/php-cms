@@ -60,7 +60,7 @@ if (isset($_POST['title'])) {
                 
                 <!-- Content input -->
                 <div data-mdb-input-init class="form-outline mb-4">
-                    <textarea name="content" id="content" style="min-height: 50vh;"></textarea>
+                    <textarea name="content" id="content" style="height: 500px; width: 100%"></textarea>
                 </div>
                 
                 <!-- Search Tag input -->
@@ -83,7 +83,7 @@ if (isset($_POST['title'])) {
 </div>
 
 <!-- TinyMCE Editor -->
-<script src="../assets/js/tinymce/tinymce.min.js"></script>
+<script src="../includes/assets/js/tinymce/tinymce.min.js"></script>
 
 <script>
 tinymce.init({

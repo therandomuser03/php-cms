@@ -21,7 +21,7 @@ include('../includes/header.php');
                     <h5 class="card-title">Pages Management</h5>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                     <br>
-                    <a href="../pages/pages.php" class="btn btn-primary" data-mdb-ripple-init>Check Pages</a>
+                    <a href="../pages/pages.php" class="btn btn-primary" data-mdb-ripple-init>Manage Pages</a>&emsp;
                     <a href="../pages/pages_add.php" class="btn btn-secondary" data-mdb-ripple-init>Add New Pages</a><br>
                 </div>
             </div>
@@ -33,7 +33,7 @@ include('../includes/header.php');
                     <h5 class="card-title">Users Management</h5>
                     <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
                     <br>
-                    <a href="../users/manage_users.php" class="btn btn-primary" data-mdb-ripple-init>Manage Users</a>
+                    <a href="../users/manage_users.php" class="btn btn-primary" data-mdb-ripple-init>Manage Users</a>&emsp;
                     <a href="../users/users_add.php" class="btn btn-secondary" data-mdb-ripple-init>Add New User</a><br>
                 </div>
             </div>
