@@ -13,12 +13,12 @@
                             <div>
                                 <i class="fi flaticon-call"></i>
                                 <h4>Call us</h4>
-                                <p>+91 / 033 7198 1000</p>
-                            </div><br>
+                                <p><a href="tel:+9171981000" style="color: white;">+91 7198 1000</a></p>
+                            </div>
                             <div>
                                 <i class="fi flaticon-contact"></i>
                                 <h4>Email us</h4>
-                                <p>info@atcel.co.in</p>
+                                <p><a href="mailto:info@atcel.co.in" style="text-decoration: none; color: white;">info@atcel.co.in</a></p>
                                 </div>
                         </div>
                     </div>

@@ -68,16 +68,28 @@ tinymce.init({
     plugins: [
         'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'image', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
         'checklist', 'mediaembed', 'casechange', 'export', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'editimage', 'advtemplate', 'ai', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown',
+        'spellchecker', 'template'  // Adding extra plugins from the second config
     ],
-    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | alignleft aligncenter alignright alignjustify | link image media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+    image_title: true,
+    automatic_uploads: true,
+    file_picker_types: 'image',
+    images_upload_url: '../gallery/upload_image.php',  // PHP script to handle image uploads
+    relative_urls: false,
+    remove_script_host: false,
+    convert_urls: true,
+    // content_css: '/path/to/your/content.css',
+    // content_css: '../includes/assets/',
     tinycomments_mode: 'embedded',
     tinycomments_author: 'Author name',
     mergetags_list: [
-    { value: 'First.Name', title: 'First Name' },
-    { value: 'Email', title: 'Email' },
+        { value: 'First.Name', title: 'First Name' },
+        { value: 'Email', title: 'Email' },
     ],
     ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
 });
+
+
 </script>
 
 <?php
