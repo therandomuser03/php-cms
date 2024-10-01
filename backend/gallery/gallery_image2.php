@@ -98,6 +98,15 @@
                                             </div>
                                         </a>
 
+                                        <!-- Form to toggle display status -->
+                                        <form action="toggle_display.php" method="POST" style="margin-top: 10px;">
+                                            <input type="hidden" name="sl_no" value="<?php echo htmlspecialchars($image['sl_no']); ?>">
+                                            <input type="hidden" name="current_display" value="<?php echo htmlspecialchars($image['display']); ?>">
+                                            <button type="submit" class="btn btn-<?php echo ($image['display'] == 'yes') ? 'warning' : 'success'; ?>">
+                                                <?php echo ($image['display'] == 'yes') ? 'Hide Image' : 'Show Image'; ?>
+                                            </button>
+                                        </form>
+
                                         <!-- Form to delete image -->
                                         <form action="delete_image.php" method="POST" style="position:relative;">
                                             <input type="hidden" name="id" value="<?php echo htmlspecialchars($image['sl_no']); ?>">

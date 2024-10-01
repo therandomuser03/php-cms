@@ -37,3 +37,14 @@ CREATE TABLE gallery (
     display ENUM('yes', 'no') NOT NULL DEFAULT 'yes',
     size VARCHAR(50) NOT NULL
 );
+
+-- Table : contact_form
+CREATE TABLE `contact_form` (
+    sl_no INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    subject VARCHAR(255) NOT NULL,
+    note TEXT NOT NULL,
+    `read` ENUM('Yes', 'No') NOT NULL DEFAULT 'No'
+);

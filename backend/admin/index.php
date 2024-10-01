@@ -6,6 +6,13 @@ include('../../config/functions.php');
 
 include '../includes/header.php';
 
+// Check if the user is already logged in
+if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
+    // Redirect to dashboard.php if logged in
+    header('Location: ../admin/dashboard.php');
+    exit();
+}
+
 if (isset($_POST['email'])){
     if ($stm = $connect->prepare('SELECT * FROM login WHERE email = ? AND password = ?')){
         $hashed = SHA1($_POST['password']);

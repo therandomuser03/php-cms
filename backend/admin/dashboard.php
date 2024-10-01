@@ -45,8 +45,8 @@ include('../includes/header.php');
                 <div class="card-body">
                     <h5 class="card-title">Gallery Management</h5>
                     <br>
-                    <a href="../gallery/gallery_image.php" class="btn btn-primary" data-mdb-ripple-init>Manage Gallery</a>&emsp;
-                    <a href="../gallery/add_image.php" class="btn btn-secondary" data-mdb-ripple-init>Add New Image</a><br>
+                    <a href="../gallery/gallery_image2.php" class="btn btn-primary" data-mdb-ripple-init>Manage Gallery</a>&emsp;
+                    <!-- <a href="../gallery/add_image.php" class="btn btn-secondary" data-mdb-ripple-init>Add New Image</a><br> -->
                 </div>
             </div>
         </div>
@@ -57,7 +57,7 @@ include('../includes/header.php');
                 <div class="card-body">
                     <h5 class="card-title">Contact-Form Mails</h5>
                     <br>
-                    <a href="#" class="btn btn-primary" data-mdb-ripple-init>Check Emails</a>&emsp;
+                    <a href="../mails/check_mails.php" class="btn btn-primary" data-mdb-ripple-init>Check Emails</a>&emsp;
                 </div>
             </div>
         </div>

@@ -43,7 +43,7 @@ require('../../config/database.php'); // Ensure this path is correct
                 <div class="list-group gallery" style="width:100%;">
                     <?php
                     // Fetch the gallery images from the database
-                    $sql = "SELECT * FROM gallery";
+                    $sql = "SELECT * FROM gallery WHERE display = 'yes'";
                     if ($stmt = mysqli_prepare($connect, $sql)) {
                         mysqli_stmt_execute($stmt);
                         $result = mysqli_stmt_get_result($stmt);
@@ -61,6 +61,8 @@ require('../../config/database.php'); // Ensure this path is correct
                                         <small class='text-muted'><?php echo htmlspecialchars($image['name']); ?></small>
                                     </div>
                                 </a>
+
+                                
                             </div>
                     <?php 
                             }
