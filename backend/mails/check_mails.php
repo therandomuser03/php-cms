@@ -43,10 +43,11 @@ if ($stm = $connect->prepare('SELECT * FROM contact_form')) {
                     <td><?php echo $record['phone']; ?></td>
                     <td><?php echo ucfirst($record['read']); ?></td> 
                     <td>
-                        <?php if (strtolower($record['read']) == 'yes') { ?>
-                            <a href="users.php?delete=<?php echo $record['sl_no']; ?>" onclick="return confirm('Are you sure you want to delete this mail?');">Delete</a>
-                        <?php } ?>
-                    </td>
+    <?php if (strtolower($record['read']) == 'yes') { ?>
+        <a href="delete_mail.php?sl_no=<?php echo $record['sl_no']; ?>" onclick="return confirm('Are you sure you want to delete this mail?');">Delete</a>
+    <?php } ?>
+</td>
+
                 </tr>
                 <?php } ?>
             </table>
@@ -56,7 +57,7 @@ if ($stm = $connect->prepare('SELECT * FROM contact_form')) {
 
 <?php
     } else {
-        echo 'No users found';
+        echo 'No mails found';
     }
 
     $stm->close();
