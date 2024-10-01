@@ -18,6 +18,6 @@ function showToast(message, position, type) {
 <?php
 get_message();
 ?>
-<p style="text-align:center; padding: 4vh 0;">Copyright @ 2024</>
+<p style="position: fixed; bottom: 0; width: 100%; text-align: center; padding: 1vh 0; background-color: #f1f1f1;">Copyright @ 2024</p>
 </body>
 </html>

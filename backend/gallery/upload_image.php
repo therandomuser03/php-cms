@@ -1,20 +1,19 @@
 <?php
 session_start();
-require('../../config/database.php'); // This will include the $connect variable
+require('../../config/database.php'); // Ensure this points to your correct database connection
 
 $targetDir = "uploads/images/";
 
 if (isset($_POST) && !empty($_FILES['image']['name']) && !empty($_POST['title'])) {
-
     $fileName = basename($_FILES['image']['name']);
     $targetFilePath = $targetDir . time() . "_" . $fileName;
     $fileSize = $_FILES['image']['size']; // Get file size
 
     // Get the title from the POST request
-    $title = $_POST['title'];  // Capture title from form submission
+    $title = $_POST['title'];
     $url = time() . "_" . $fileName; // Set the URL for the image (this could also be $fileName)
 
-    // Allow certain file formats (for safety)
+    // Allowed file types
     $allowTypes = array('jpg', 'png', 'jpeg', 'gif');
     $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
 
@@ -34,7 +33,7 @@ if (isset($_POST) && !empty($_FILES['image']['name']) && !empty($_POST['title'])
                     // Generate a URL-friendly image path
                     $imageUrl = 'https://' . $_SERVER['HTTP_HOST'] . '/' . $targetFilePath;
                     $_SESSION['success'] = 'Image uploaded successfully.';
-                    echo json_encode(['success' => true, 'imageUrl' => $imageUrl]);
+                    echo json_encode(['success' => true, 'imageUrl' => $imageUrl, 'message' => 'Image uploaded successfully.']);
                 } else {
                     $_SESSION['error'] = 'Image upload failed in the database.';
                     echo json_encode(['success' => false, 'message' => 'Failed to save image in the database.']);
