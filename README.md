@@ -77,30 +77,10 @@ cms_2/                                          # Root directory
 
 
 <!-- File Structure Breakdown:
-1. config/:
-- db.php: Contains your database connection details.
-2. public/:
-- index.php: The main entry point, usually the homepage or dashboard.
-- content/: Contains pages for managing CMS posts, including creating, editing, viewing, and listing posts.
-- gallery/: Manages image uploads, gallery listings, and image viewing.
-- admin/: Admin-specific functionalities like managing users, roles, and access permissions.
-3. assets/:
-- css/: Contains stylesheets. For example, style.css for the main styles of the site.
-- js/: Stores JavaScript files, such as script.js, for adding interactivity to the CMS.
-- images/: May contain static images that don't change often, such as logos or icons.
-4. uploads/:
-- images/: Directory for storing user-uploaded images (e.g., blog post images or gallery images).
-5. includes/:
-- header.php: Shared header for all the pages (could contain navigation).
-- footer.php: Shared footer (common across pages).
-sidebar.php: For admin or user navigation, depending on their role.
-6. functions/:
-- auth.php: Contains authentication and user role validation functions.
-- content.php: Functions for CRUD (Create, Read, Update, Delete) operations on posts.
-- gallery.php: Functions for managing the gallery, image uploads, and validations.
-- validation.php: General form validation for user input across different forms.
-7. sql/:
-cms_2.sql: The SQL file to set up your database. It includes the tables and initial data.
+.
+.
+.
+.
 8. README.md:
 Documentation to explain the project, setup instructions, and any dependencies.
 ------------------------------------
