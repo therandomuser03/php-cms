@@ -5,7 +5,7 @@ echo '<li><a href="index.php?pagecode='.$i.'">'.$i.'</a></li>';
 <!-- Project documentation -->
 
 
-
+#### This is a project I have created using SQL and PHP. This is a CMS (Content Management System) which is similar to Wordpress, Joomla, etc., with the integration of TinyMCE, a WYSIWYG editor. 
 
 
 # Project Directory Structure
